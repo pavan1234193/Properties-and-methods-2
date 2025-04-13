@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Array Object Example</title>
+
+    <script>
+
+        function arrayDemo() {
+
+            let fruits = ["Apple", "Banana", "Mango"];
+
+            let output = "";
+
+
+
+            output += "Original Array: " + fruits + "<br>";
+
+            output += "Length: " + fruits.length + "<br>";
+
+
+
+            fruits.push("Orange"); // add element
+
+            output += "After push: " + fruits + "<br>";
+
+
+
+            fruits.pop(); // remove last element
+
+            output += "After pop: " + fruits + "<br>";
+
+
+
+            fruits.sort(); // sort array
+
+            output += "Sorted Array: " + fruits + "<br>";
+
+
+
+            document.getElementById("arrayOutput").innerHTML = output;
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="arrayDemo()">
+
+
+
+    <h2>Array Object Properties and Methods</h2>
+
+    <div id="arrayOutput"></div>
+
+
+
+</body>
+
+</html>
+
+b) <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Math Object Example</title>
+
+    <script>
+
+        function mathDemo() {
+
+            let output = "";
+
+
+
+            output += "PI: " + Math.PI + "<br>";
+
+            output += "Square Root of 64: " + Math.sqrt(64) + "<br>";
+
+            output += "Power (2^5): " + Math.pow(2, 5) + "<br>";
+
+            output += "Random Number (0 to 1): " + Math.random() + "<br>";
+
+            output += "Round 7.3: " + Math.round(7.3) + "<br>";
+
+            output += "Ceil 4.1: " + Math.ceil(4.1) + "<br>";
+
+            output += "Floor 4.9: " + Math.floor(4.9) + "<br>";
+
+            output += "Max of (5, 10, 15): " + Math.max(5, 10, 15) + "<br>";
+
+            output += "Min of (5, 10, 15): " + Math.min(5, 10, 15) + "<br>";
+
+
+
+            document.getElementById("mathOutput").innerHTML = output;
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="mathDemo()">
+
+
+
+    <h2>Math Object Properties and Methods</h2>
+
+    <div id="mathOutput"></div>
+
+
+
+</body>
+
+</html>
